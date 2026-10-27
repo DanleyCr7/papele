@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assetPath } from "@/lib/assets";
 import { site } from "@/lib/site";
 
 export function Companies() {
@@ -12,7 +13,7 @@ export function Companies() {
           <a href="#contato" data-quote-product="empresas" className="button button-primary mt-5 w-full sm:w-auto md:mt-6">{site.companies.cta}</a>
         </div>
         <div className="flex items-center pt-4 md:-ml-8 md:p-0">
-          <Image src="/images/empresas-v2.png" alt="Sacola creme Papelê, embalagem kraft, cartões de visita e adesivos personalizados para empresas." width={1536} height={1024} sizes="(max-width: 639px) calc(100vw - 40px), (max-width: 767px) calc(100vw - 80px), (max-width: 1279px) 52vw, 630px" className="h-auto w-full object-contain md:mix-blend-multiply" />
+          <Image src={assetPath("/images/empresas-v2.png")} alt="Sacola creme Papelê, embalagem kraft, cartões de visita e adesivos personalizados para empresas." width={1536} height={1024} sizes="(max-width: 639px) calc(100vw - 40px), (max-width: 767px) calc(100vw - 80px), (max-width: 1279px) 52vw, 630px" className="h-auto w-full object-contain md:mix-blend-multiply" />
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assetPath } from "@/lib/assets";
 import { WhatsappLink } from "@/components/whatsapp-link";
 import { site } from "@/lib/site";
 
@@ -24,7 +25,7 @@ export function Hero() {
       </div>
       <div className="relative mx-auto mt-3 w-full max-w-[340px] sm:max-w-[400px] md:mx-0 md:mt-0 md:w-auto md:max-w-none xl:-ml-8 xl:-mr-7">
         <Image
-          src="/images/hero-v2.png"
+          src={assetPath("/images/hero-v2.png")}
           width={1254}
           height={1254}
           alt="Sacola verde sálvia da Papelê, caixa creme com laço, etiqueta personalizada e topo Parabéns."

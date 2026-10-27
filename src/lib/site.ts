@@ -1,3 +1,5 @@
+import { assetPath } from "@/lib/assets";
+
 export const navigation = [
   { label: "Criações", href: "#criacoes" },
   { label: "Para empresas", href: "#empresas" },
@@ -28,21 +30,21 @@ export const creations = [
   {
     title: "Para celebrar",
     description: "Topos de bolo, lembrancinhas e banners.",
-    image: "/images/celebrar-v2.png",
+    image: assetPath("/images/celebrar-v2.png"),
     alt: "Bolo com topo Parabéns e lembrancinhas em creme com laços verde sálvia.",
     product: "festas",
   },
   {
     title: "Para sua marca",
     description: "Sacolas, cartões de visita, etiquetas e adesivos.",
-    image: "/images/marca-v2.png",
+    image: assetPath("/images/marca-v2.png"),
     alt: "Sacola verde sálvia, cartões de visita e etiquetas personalizados da Papelê.",
     product: "empresas",
   },
   {
     title: "Para presentear",
     description: "Caixas de flores e chocolates.",
-    image: "/images/presentear-v2.png",
+    image: assetPath("/images/presentear-v2.png"),
     alt: "Caixa de presente creme com rosas pêssego e chocolates artesanais.",
     product: "presentes",
   },

@@ -1,11 +1,12 @@
 import Image from "next/image";
+import { assetPath } from "@/lib/assets";
 import { site } from "@/lib/site";
 
 export function BrandLogo({ footer = false }: { footer?: boolean }) {
   return (
     <a href="#inicio" aria-label={`${site.name} — início`} className="inline-flex shrink-0 flex-col items-center rounded-sm">
       <Image
-        src="/images/logo.png"
+        src={assetPath("/images/logo.png")}
         width={174}
         height={58}
         alt={site.name}
